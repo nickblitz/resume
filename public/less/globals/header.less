@@ -1,0 +1,167 @@
+header {
+	.size(100%; auto);
+	@media (min-width: @screen-tablet) {
+		.size(100%; 76px);
+	}
+	margin-top: -76px;
+	transition: margin-top 0.5s ease-out;
+
+	.container {
+		width: 100%;
+		background-color: transparent;
+		border: none;
+	}
+
+	.navbar-header {
+		float: left;
+		.navbar-brand {
+			padding: 10px 15px;
+			.logo {
+				background: url('/img/logo.png') no-repeat;
+				background-size: 100% auto;
+				.size(150px; 39px);
+
+				@media (min-width: @screen-tablet) {
+					.size(200px; 52px);
+				}
+
+				img {
+					width: 100%;
+					height: auto;
+				}
+			}
+		}
+	}
+
+	.navbar-nav {
+
+		> li {
+
+			.dropdown-bg {
+				display: none;
+				position: fixed;
+				.size(100%; 100%);
+				top: 0;
+				left: 0;
+				background-color: rgba(44, 189, 155, 0.9);
+			}
+
+			> .dropdown-toggle {
+				color: @color-grapefruit;
+				z-index: 9999;
+				font-size: 18px;
+				@media (min-width: @screen-tablet) {
+					font-size: 35px;
+				}
+
+				&:focus {
+					background-color: transparent;
+				}
+			}
+
+			.dropdown-menu {
+
+				text-align: center;
+				position: fixed;
+				.size(200px; 300px);
+				top: 50%;
+				left: 50%;
+				margin-left: -100px;
+				margin-top: -150px;
+				.font-m3();
+				background-color: transparent;
+			    box-shadow: none;
+			    border: none;
+
+				> li {
+					> a {
+						display: inline-block;
+
+						&:hover {
+							background-color: transparent;
+							color: @color-light;
+						}
+					}
+				}
+
+			}
+		}
+
+		&.navbar-right {
+			float: right;
+		}
+	}
+
+	
+	&.navbar-static-top {
+		position: absolute;
+		width: 100%;
+		top: 76px;
+	}
+
+	&.navbar-fixed-top {
+		background-color: @navbar-color;
+		-webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,0.1);
+		box-shadow: 0 2px 2px 0 rgba(0,0,0,0.1);
+		margin-top: 0;
+		border-bottom: 1px solid @color-grey-darken;
+
+		.navbar-brand {
+			.logo {
+				background: url('/img/logo-colored.png') no-repeat;
+				background-size: 100% auto;
+				display: inline-block;
+			}
+		}
+
+
+		@media (min-width: @screen-tablet) {
+			.dropdown-toggle {
+				display: none;
+			}
+
+			.navbar-nav {
+				> li {
+
+					.dropdown-bg {
+						display: none!important;
+						background-color: transparent;
+					}
+					.dropdown-menu {
+						display: inline-block;
+					    position: relative;
+					    top: auto;
+					    background-color: transparent;
+					    border: none;
+					    box-shadow: none;
+					    text-align: right;
+					    width: auto;
+					    height: auto;
+					    left: auto;
+					    margin: 0 10px;
+					    line-height: 32px;
+
+					    > li {
+					    	display: inline-block;
+
+					    	> a {
+					    		.font-s3();
+					    		line-height: 58px;
+					    		color: @color-grey-darken;
+
+					    		&:hover {
+					    			color: @color-grapefruit-darken;
+					    		}
+					    	}
+					    }
+					}
+
+					> a {
+						line-height: 46px;
+					}
+
+				}
+			}
+		}
+	}
+}

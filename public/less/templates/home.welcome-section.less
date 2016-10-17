@@ -1,0 +1,74 @@
+.section-welcome {
+	background-color: @brand-success;
+	.size(100%; 630px);
+
+	.center-message {
+		display: inline-block;
+		width: 100%;
+		margin-top: 100px;
+
+		@media (min-width: @screen-tablet) {
+			margin-top: 150px;
+		}
+
+		span {
+			display: block;
+
+			@media (min-width: @screen-tablet) {
+				display: inline;
+			}
+		}
+		
+		.home-title {
+			color: @color-light;
+			font-weight: 300;
+			text-shadow: 2px 2px 0 @brand-success-darken;
+
+			&.small {
+				font-size: 30px;
+			}
+
+			&.large {
+				font-size: 40px;
+			}
+
+			b {
+				font-weight: 700;
+			}
+		}
+		.ninja {
+			.size(270px; auto);
+			-webkit-transition: width 0.5s ease-out;
+    		transition: width 0.5s ease-out;
+		}
+		
+	}
+
+	.center-stack {
+		color: @color-green-dark;
+		.font-m3();
+		padding-top: 30px;
+
+		.stack {
+			.size(190px; auto);
+			margin-top: 10px;
+
+			@media (min-width: @screen-tablet) {
+				.size(300px; auto);
+				margin-top: 0px;
+				margin-left: -28px;
+			}
+		}
+	}
+
+	.center-next {
+		margin-top: 15px;
+		font-size: 60px;
+
+		a {
+			color: @color-light;
+		}
+	}
+
+	
+}

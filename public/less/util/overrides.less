@@ -1,0 +1,59 @@
+.panel {
+	&.bg-primary {
+		background-color: @brand-primary-darken;
+		color: @color-light;
+		.panel-heading {
+			background-color: @brand-primary;
+		}
+	}
+
+	&.bg-info {
+		background-color: @brand-info-darken;
+		color: @color-light;
+		.panel-heading {
+			background-color: @brand-info;
+		}
+	}
+
+	&.bg-success {
+		background-color: @brand-success-darken;
+		color: @color-light;
+		.panel-heading {
+			background-color: @brand-success;
+		}
+	}
+
+	&.bg-grapefruit {
+		background-color: @color-grapefruit-darken;
+		color: @color-light;
+		.panel-heading {
+			background-color: @color-grapefruit;
+		}
+	}
+}
+
+.no-radius {
+	border-radius: 0;
+}
+
+.form-group {
+	label {
+		font-weight: 300;
+		.type-regular;
+	}
+
+	.error-message {
+		color: red;
+		position: absolute;
+		.font-xs1();
+	}
+}
+
+.btn {
+	border-radius: 2px;
+	box-shadow: inset 0 -4px 0 -1px rgba(0, 0, 0, 0.15);
+	
+	&.btn-primary {
+		background-color: @brand-primary;
+	}
+}

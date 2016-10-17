@@ -1,0 +1,48 @@
+<h1>Let's Chat</h1>
+<h2>Drop me a line</h2>
+<p>
+	<i class="fa fa-envelope-o"></i> <a href="mailto:nick@nickthedev.com">nick@nickthedev.com</a>
+</p>
+
+<div class="container contact-container">
+	<form name="form" novalidate ng-submit="update(contact)">
+		<div class="row">
+			<div class="col-md-12 alert alert-success" ng-show="form.$submitted && form.$valid">
+				Thanks for reaching out! I will be in contact shortly.
+			</div>
+
+			<div class="col-md-6 form-group">
+				<label>Name</label>
+				<input type="text" class="form-control" ng-model="contact.name" name="cName" required>
+				<div class="error-message" ng-show="form.$submitted || form.cEmail.$touched">
+			      <span ng-show="form.cName.$error.required">Tell me your name.</span>
+			    </div>
+			</div>
+			<div class="col-md-6 form-group">
+				<label>Company</label>
+				<input type="text" class="form-control" ng-model="contact.company">
+			</div>
+			<div class="col-md-6 form-group">
+				<label>Email</label> 
+				<input type="email" class="form-control" ng-model="contact.email" name="cEmail" required >
+				<div class="error-message" ng-show="form.$submitted || form.cEmail.$touched">
+			      <span ng-show="form.cEmail.$error.required">Tell me your email.</span>
+			      <span ng-show="form.cEmail.$error.email">This is not a valid email.</span>
+			    </div>
+			</div>
+			<div class="col-md-6 form-group">
+				<label>Phone</label>
+				<input type="phone" class="form-control" ng-model="contact.phone">
+			</div>
+			<div class="col-md-12 form-group">
+				<label>Message</label>
+				<textarea class="form-control" ng-model="contact.message"></textarea>
+			</div>
+			<div class="col-md-12">
+				<button type="submit" class="btn btn-primary btn-lg btn-block">Submit</button>
+			</div>
+		</div>
+	</form>
+</div>
+
+<h2>Or call me @ 323.243.9463</h2>

@@ -1,0 +1,204 @@
+.section-history {
+	background-color: @color-grapefruit;
+	text-align: center;
+	min-height: 600px;
+	padding: 15px;
+	overflow: hidden;
+	
+	@media (min-width: @screen-tablet) {
+		padding: 40px;
+	}
+
+	h1 {
+		color: @color-light;
+	}
+
+	.timeline-container {
+		margin-top: 20px;
+		display: inline-block;
+		position: relative;
+
+		@media (min-width: @screen-sm) {
+			margin: 20px 10px;
+		}
+
+		@media (min-width: @screen-md) {
+			margin: 20px 100px;
+		}
+
+		.timeline-pole {
+			display: inline-block;
+			min-height: 1550px;
+			width: 4px;
+			background-color: @color-grapefruit-darken;
+			position: absolute;
+		    left: 50%;
+		    margin-left: -2px;
+
+		    @media (min-width: @screen-tablet) {
+		    	min-height: 610px;
+		    }
+
+		    &:before, &:after {
+		    	content: ' \25CF';
+    			font-size: 30px;
+    			color: @color-grapefruit-darken;
+    			position: absolute;
+		    }
+
+		    &:before {
+    			top: -21px;
+    			left: -7px;
+		    }
+
+		    &:after {
+    			bottom: -21px;
+    			left: -7px;
+		    }
+		}
+
+		.timeline-event {
+			background-color: @color-light;
+			padding: 20px;
+			width: 100%;
+			position: relative;
+			margin-top: 50px;
+
+			@media (min-width: @screen-tablet) {
+				width: 45%;
+			}
+
+			.event-dot {
+				display: none;
+
+				@media (min-width: @screen-tablet) {
+					border-radius: 50%;
+					display: inline-block;
+					background-color: @color-grapefruit-darken;
+					border: 5px solid @color-grapefruit;
+					.size(18px; 18px);
+				    position: absolute;
+				    top: 25px;
+				}
+			}
+
+			.event-title {
+				color: @color-grey-darkest;
+				.font-m1();
+				font-weight: 600;
+			}
+
+			.event-date {
+				color: @color-grey-darken;
+				float: right;
+			}
+
+			.event-body {
+				margin-top: 15px;
+				text-align: justify;
+			}
+
+			.event-position {
+				color: @color-grey-darken;
+				float: left;
+				font-weight: 600;
+			}
+
+			@media (min-width: @screen-sm) {
+				&:after {
+					top: 17px;
+					border: solid transparent;
+					content: " ";
+					.size(0; 0);
+					position: absolute;
+					pointer-events: none;
+					border-width: 17px;
+				}
+
+				&:nth-child(odd) {
+				    float: right;
+
+				    .event-dot {
+				    	left: -44px;
+				    }
+
+				    .event-title {
+						float: left;
+					}
+
+
+				    &:after {
+						right: 100%;
+						border-right-color: @color-light;
+
+					}
+				}
+
+				&:nth-child(even) {
+				    float: left;
+
+				    .event-dot {
+				    	right: -44px;
+				    }
+
+				    .event-title {
+						float: right;
+					}
+
+				    &:after {
+						left: 100%;
+						border-left-color: @color-light;
+					}
+				}
+
+				&:nth-child(2) {
+					margin-top: 0px;
+				}
+
+				@media (min-width: @screen-tablet) {
+					&:nth-child(3) {
+						margin-bottom: 50px;
+					}
+
+					&:nth-child(5) {
+						margin-top: 90px;
+					}
+				}
+			}
+
+			@media (min-width: @screen-md) {
+				&:nth-child(odd) {
+				    .event-dot {
+				    	left: -46px;
+				    }
+
+				}
+
+				&:nth-child(even) {
+				    .event-dot {
+				    	right: -46px;
+				    }
+				}
+			}
+
+			@media (min-width: @screen-lg) {
+				&:nth-child(odd) {
+				    .event-dot {
+				    	left: -56px;
+				    }
+
+				}
+
+				&:nth-child(even) {
+				    .event-dot {
+				    	right: -56px;
+				    }
+				}
+			}
+
+			
+
+
+		}
+	}
+}

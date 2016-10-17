@@ -1,0 +1,342 @@
+.section-projects {
+	background-color: @color-light;
+
+	.panel-project {
+		margin: 60px 0 60px;
+		min-height: 400px;
+		position: relative;
+
+		> .panel-body {
+			padding: 30px;
+  			text-align: center;
+  			@media (min-width: @screen-tablet) {
+				padding: 55px;
+				text-align: justify;
+			}
+		}
+
+		.project-graphic {
+
+			@media (min-width: @screen-tablet) {
+				position: absolute;
+			}
+		}
+
+		ul {
+			padding-left: 0;
+			padding-right: 0;
+			@media (min-width: @screen-tablet) {
+				padding-left: 18px;
+			}
+
+			> li {
+				margin-bottom: 15px;
+			}
+		}
+
+		ul.task-list {
+			> li {
+				list-style: none;
+				
+				&:before {
+					@media (min-width: @screen-tablet) {
+						content: "\f0a9"; 
+						font-family: FontAwesome; 
+						display: inline-block;
+						position: absolute;
+	    				margin-left: -18px;
+	    				color: @brand-success-darken;
+	    			}
+				}
+			}
+		}
+
+		.panel-skills {
+			text-align: center;
+			min-height: 440px;
+
+			@media (min-width: @screen-md) {
+				min-height: 560px;
+			}
+
+			@media (min-width: @screen-lg) {
+				min-height: 475px;
+			}
+
+			.panel-body {
+				padding: 25px 15px 15px 15px;
+			}
+
+			.panel-heading {
+				padding: 25px 15px;
+			}
+
+			h2 {
+				margin: 0 0 25px 0;
+				min-height: 44px;
+			}
+
+			p {
+				font-weight: 100;
+			}
+
+			.circle-icon {
+				background-color: @color-light;
+				.size(70px; 70px);
+				border-radius: 50%;
+				display: inline-block;
+				line-height: 87px;
+
+				i {
+					font-size: 36px;
+				}
+			}
+
+			&.bg-success {
+				.circle-icon {
+					i {
+						color: @brand-success-darken;
+					}
+				}
+			}
+
+			&.bg-primary {
+				.circle-icon {
+					i {
+						color: @brand-primary;
+					}
+				}
+			}
+
+			&.bg-grapefruit {
+				.circle-icon {
+					i {
+						color: @color-grapefruit;
+					}
+				}
+			}
+
+			&.bg-info {
+				.circle-icon {
+					i {
+						color: @brand-info;
+					}
+				}
+			}
+		}
+
+		&.panel-hotwheels {
+			min-height: 600px;
+
+			@media (min-width: @screen-sm) {
+				min-height: 972px;
+			}
+
+			@media (min-width: @screen-md) {
+				min-height: 600px;
+			}
+
+			.panel-body {
+				@media (min-width: @screen-md) {
+					margin-left: 430px;
+				}
+			}
+
+			.project-graphic {
+				background: url('/img/port-hw.png') no-repeat;
+				background-position: center top;
+				background-size: 100% auto;
+				.size(100%; 460px);
+
+				@media (min-width: @screen-xs) {
+					background-size: 70% auto;
+				}
+
+				@media (min-width: @screen-md) {
+					background-position: left top;
+					background-size: 400px auto;
+					.size(400px; 700px);
+					left: 40px;
+	  				top: 120px;
+	  			}
+
+			}
+		}
+
+		&.panel-vizio {
+			min-height: 600px;
+
+			.panel-body {
+				@media (min-width: @screen-sm) {
+					margin-right: 340px;
+				}
+				@media (min-width: @screen-md) {
+					margin-right: 470px;
+				}
+			}
+
+			.project-graphic {
+				background: url('/img/port-vizio.png') no-repeat;
+				background-position: center top;
+				background-size: 100% auto;
+				.size(100%; 460px);
+
+				@media (min-width: @screen-xs) {
+					background-size: 80% auto;
+				}
+
+				@media (min-width: @screen-sm) {
+					background-position: right top;
+					background-size: 100% auto;	
+					right: 40px;
+	  				top: 90px;
+					.size(340px; 700px);
+				}
+
+				@media (min-width: @screen-md) {
+					.size(460px; 700px);
+	  			}
+
+			}
+		}
+
+		&.panel-instabrand-search {
+			min-height: 600px;
+
+			@media (min-width: @screen-sm) {
+				min-height: 1280px;
+			}
+
+			@media (min-width: @screen-md) {
+				min-height: 600px;
+			}
+
+			.project-graphic {
+				background: url('/img/port-instabrand-search.png') no-repeat;
+				background-position: center bottom;
+				background-size: contain;
+
+				.size(100%; 196px);
+
+				@media (min-width: @screen-xs) {
+					.size(100%; 300px);
+				}
+
+				@media (min-width: @screen-sm) {
+					background-size: contain;
+					.size(100%; 390px);
+					margin-top: -40px;
+				}
+
+				@media (min-width: @screen-md) {
+					margin-top: 0;
+	  				background-position: right bottom;
+				    background-size: 100% auto;
+				    .size(600px; 540px);
+				    right: -110px;
+				    bottom: 130px;
+	  			}
+
+	  			@media (min-width: @screen-lg) {
+				    .size(700px; 630px);
+				    right: -110px;
+				    bottom: 30px;
+	  			}
+
+			}
+		}
+
+		&.panel-instabrand {
+			min-height: 600px;
+
+			@media (min-width: @screen-sm) {
+				min-height: 1040px;
+			}
+
+			@media (min-width: @screen-md) {
+				min-height: 600px;
+			}
+
+			.project-graphic {
+				background: url('/img/port-instabrand.png') no-repeat;
+				background-position: center bottom;
+				background-size: 100% auto;
+				.size(100%; 196px);
+
+				@media (min-width: @screen-xs) {
+					.size(100%; 300px);
+				}
+
+				@media (min-width: @screen-sm) {
+					background-size: 70% auto;
+				}
+
+				@media (min-width: @screen-md) {
+	  				background-position: left bottom;
+				    background-size: 100% auto;
+				    .size(700px; 420px);
+				    left: -20px;
+				    bottom: -50px;
+	  			}
+
+			}
+		}
+
+		&.panel-homeexchange {
+			min-height: 600px;
+
+			@media (min-width: @screen-sm) {
+				min-height: 880px;
+			}
+
+			@media (min-width: @screen-md) {
+				min-height: 600px;
+			}
+
+			@media (min-width: @screen-md) {
+				background-image: url('/img/port-he-bg.png');
+				background-repeat: no-repeat;
+				background-position: 480px 60px;
+    			background-size: 470px auto;
+
+			}
+
+			@media (min-width: @screen-lg) {
+				background-position: 640px 60px;
+			}
+
+			.panel-body {
+				@media (min-width: @screen-md) {
+					margin-right: 470px;
+				}
+			}
+
+			.project-graphic {
+				background: url('/img/port-he.png') no-repeat;
+				background-position: center top;
+				background-size: 100% auto;
+				.size(100%; 200px);
+
+				@media (min-width: @screen-xs) {
+					background-size: 70% auto;
+				}
+
+				@media (min-width: @screen-sm) {
+					.size(100%; 300px);
+				}
+
+				@media (min-width: @screen-md) {
+					background-position: right bottom;
+					background-size: 100% auto;
+					.size(460px; 610px);
+					right: -32px;
+	  				bottom: -30px;
+	  			}
+
+			}
+		}
+
+	}
+
+	
+}
