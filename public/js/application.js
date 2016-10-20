@@ -98,7 +98,7 @@ angular.module('MyApp')
       company: 'iCapture',
       duration: 'Apirl 2005 - July 2012',
       position: 'Founder / Lead Developer',
-      summary: 'I started iCapture Marketing out of my parents garage in 2005. It started as a web and UI design company that transformed into development. Over the years I grew the company to over 100 active clients that were from small startups to medium size businesses. During this time not only did I gain a mass amount of development experience but also learned how to manage a business and how to project manage.'
+      summary: 'I started iCapture Marketing out of my parents garage in 2005. It started as a web and UI design company that transformed into development. Over the years I grew the company to over 100 active clients that were from small startups to medium size businesses. During this time I gained experience building out PHP sites on Zend, CakePHP, Yii, Wordpress and also gained front end experience in HTML and CSS.'
     }];
 
     $scope.contactForm = {};
