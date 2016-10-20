@@ -11,7 +11,7 @@ angular.module('MyApp')
       company: 'InstaBrand',
       duration: 'March 2014 - August 2015',
       position: 'CTO',
-      summary: 'I built and managed an engineering team of 11 people, implemented agile and scrum practices, setup CI workflows, lead architect on entire angular build and PHP YII2 backend, helped build product team, helped companies achieve series A in funding with viable product and ensured code quality across team. '
+      summary: 'I built and managed an engineering team of 11 people, implemented agile and scrum practices, set up CI workflows, lead architect on entire angular build and PHP YII2 backend, helped build product team and manage stakeholder expectations, helped companies achieve series A in funding with viable product and ensured code quality across team.'
     },{
       company: 'Blitz Agency',
       duration: 'October 2013 - March 2014',
