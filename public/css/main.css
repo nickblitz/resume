@@ -9048,6 +9048,13 @@ header .navbar-nav > li .dropdown-menu > li > a:hover {
   background-color: transparent;
   color: #f6f7fb;
 }
+header .navbar-nav > li .dropdown-menu > li > a.btn {
+  line-height: 30px;
+  color: #fff;
+}
+header .navbar-nav > li .dropdown-menu > li > a.btn:hover {
+  color: #5a9aef;
+}
 header .navbar-nav.navbar-right {
   float: right;
 }
@@ -9100,6 +9107,13 @@ header.navbar-fixed-top .navbar-brand .logo {
   }
   header.navbar-fixed-top .navbar-nav > li .dropdown-menu > li > a:hover {
     color: #dd4250;
+  }
+  header.navbar-fixed-top .navbar-nav > li .dropdown-menu > li > a.btn {
+    line-height: 30px;
+    color: #fff;
+  }
+  header.navbar-fixed-top .navbar-nav > li .dropdown-menu > li > a.btn:hover {
+    color: #5a9aef;
   }
   header.navbar-fixed-top .navbar-nav > li > a {
     line-height: 46px;
