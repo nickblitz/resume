@@ -21,7 +21,7 @@ angular.module('MyApp')
       company: 'eNiche Solutions',
       duration: 'July 2012 - August 2013',
       position: 'Technical Lead',
-      summary: 'In July 2012, eNiche Solutions bought out my company that I have had for the past 8 years and I took over as head developer.  When I joined eNiche Solutions they were a web marketing company, I helped enter them into development which they were then able to dynamically SEO a wider variety of sites. Being apart of eNiche not only allowed me to work on big name projects but also entered me into the SEO game. I learned many schema tricks, how to properly place “natural” backlinks and many other SEO practices that are now involved in my development methods.'
+      summary: 'In July 2012, eNiche Solutions bought out my company that I have had for the past 6.5 years and I took over as head developer.  When I joined eNiche Solutions they were a web marketing company, I helped enter them into development which they were then able to dynamically SEO a wider variety of sites. Being apart of eNiche not only allowed me to work on big name projects but also entered me into the SEO game. I learned many schema tricks, how to properly place “natural” backlinks and many other SEO practices that are now involved in my development methods.'
     },{
       company: 'iCapture',
       duration: 'Apirl 2005 - July 2012',
