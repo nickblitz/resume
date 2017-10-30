@@ -75,12 +75,17 @@ angular.module('MyApp')
     $scope.contact = {};
 
     $scope.history = [{
-      company: 'InstaBrand',
-      duration: 'August 2015 - present',
+      company: 'Open Influence',
+      duration: 'August 2015 - August 2017',
       position: 'Engineering Manager',
       summary: 'Managed a team of 4, helped code review, technical planning of product specs, managed release process, contributed to architecting and building data structure in Neo4j and Elasticsearch, helped create python ETL jobs to transform our data from our SSOT to be indexed into Elasticsearch and Neo4. Contribute architect and feature builds of Django RESTful application and frontend application.'
     },{
-      company: 'InstaBrand',
+      company: 'Essio',
+      duration: 'October 2013 - August 2017',
+      position: 'Technical Consultant',
+      summary: 'Conducted technical screening of Essio Developers, code review all pull requests to maintain code quality, advise on technology to use for ecommerce platform.'
+    },{
+      company: 'Open Influence',
       duration: 'March 2014 - August 2015',
       position: 'CTO',
       summary: 'I built and managed an engineering team of 11 people, implemented agile and scrum practices, set up CI workflows, lead architect on entire angular build and PHP YII2 backend, helped build product team and manage stakeholder expectations, helped companies achieve series A in funding with viable product and ensured code quality across team.'

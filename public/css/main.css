@@ -9693,7 +9693,6 @@ header.navbar-fixed-top .navbar-brand .logo {
 .section-contact {
   background-color: #e6e9ee;
   text-align: center;
-  min-height: 600px;
   padding: 15px;
 }
 @media (min-width: 768px) {
